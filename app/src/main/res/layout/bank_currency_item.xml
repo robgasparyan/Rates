@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_40sdp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/bankCurrencyImageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_6sdp"
+        app:srcCompat="@mipmap/ic_usd" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/bankCurrencyTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_weight="2"
+        android:gravity="start|center_vertical"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/_12sdp"
+        tools:text="USD" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/bankBuyPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:gravity="start"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/_11sdp"
+        tools:text="477" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/bankSellPriceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.2"
+        android:gravity="start"
+        android:textColor="@color/textColor"
+        android:textSize="@dimen/_11sdp"
+        tools:text="480.5" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

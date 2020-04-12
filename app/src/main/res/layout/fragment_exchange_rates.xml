@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorLightGray"
+        android:minHeight="@dimen/_38sdp"
+        android:weightSum="4">
+
+        <FrameLayout
+            android:id="@+id/cashTypeChangeFrameLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_weight="2"
+            android:background="@drawable/white_background">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/cashTypeTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:drawableEnd="@drawable/ic_down_arrow"
+                android:gravity="center_vertical"
+                android:text="@string/cash"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/_12sdp" />
+        </FrameLayout>
+
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5" />
+
+        <FrameLayout
+            android:id="@+id/currencyChangeFrameLayout"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_5sdp"
+            android:layout_weight="1.5"
+            android:background="@drawable/white_background">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/exchangeCurrencyImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_6sdp"
+                app:srcCompat="@mipmap/ic_usd" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/exchangeCurrencyTextView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:drawableEnd="@drawable/ic_down_arrow"
+                android:gravity="center"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/_12sdp"
+                tools:text="USD" />
+        </FrameLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGray"
+        android:minHeight="@dimen/_40sdp">
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_weight="2"
+            android:elevation="@dimen/_2sdp"
+            android:gravity="start|center_vertical"
+            android:text="@string/bank_name"
+            android:textColor="@color/textColor" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/buyTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:layout_weight="0.1"
+            android:drawableEnd="@drawable/ic_down_arrow"
+            android:gravity="center_vertical"
+            android:text="@string/buy" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/sellTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_weight="0.1"
+            android:drawableEnd="@drawable/ic_down_arrow"
+            android:gravity="center_vertical"
+            android:text="@string/sell" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/exchangeRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginEnd="@dimen/_12sdp" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

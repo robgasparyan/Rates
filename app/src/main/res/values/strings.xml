@@ -1,3 +1,29 @@
 <resources>
-    <string name="app_name">Rates</string>
+    <string name="app_name">Rate</string>
+
+    <string name="exchange_rates">Exchange rates</string>
+    <string name="bank_details">Bank details</string>
+    <string name="bank_name">Bank name</string>
+    <string name="sell">Sell</string>
+    <string name="buy">Buy</string>
+    <string name="exchange">Exchange</string>
+
+    <!--    Currency descriptions-->
+    <string name="usd_desc">United States Dollar</string>
+    <string name="eur_desc">Euro</string>
+    <string name="rub_desc">Russian rouble</string>
+    <string name="aud_desc">Australian dollar</string>
+    <string name="cad_desc">Canadian dollar</string>
+    <string name="chf_desc">Swiss franc</string>
+    <string name="gbr_desc">Great Britain Pound sterling</string>
+    <string name="gel_desc">Georgian lari</string>
+    <string name="jpy_desc">Japanese yen</string>
+    <string name="xau_desc">Gold ounce</string>
+    <string name="currency">Currency</string>
+    <string name="all_branches">All branches</string>
+    <string name="cash">Cash</string>
+    <string name="non_cache">Non-Cash</string>
+    <string name="contact_number">Contact number</string>
+    <string name="working_days">Working days</string>
+    <string name="view_on_map">View on map</string>
 </resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rate_navigation"
+    app:startDestination="@id/exchangeRateFragment">
+
+    <fragment
+        android:id="@+id/exchangeRateFragment"
+        android:name="com.example.rate.fragments.ExchangeRateFragment"
+        android:label="ExchangeRateFragment">
+        <action
+            android:id="@+id/exchangeToBankDetail"
+            app:destination="@id/bankDetailFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:launchSingleTop="true"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/exchangeRateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bankDetailFragment"
+        android:name="com.example.rate.fragments.BankDetailFragment"
+        android:label="BankDetailFragment">
+        <argument
+            android:name="destination_id"
+            app:argType="string"
+            app:nullable="true" />
+        <argument
+            android:name="bank_detail"
+            android:defaultValue="@null"
+            app:argType="com.example.rate.models.ExchangePointModel"
+            app:nullable="true" />
+    </fragment>
+</navigation>
