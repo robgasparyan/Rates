@@ -14,10 +14,9 @@ import com.sfl.rates.adapters.ExchangeRateAdapter
 import com.sfl.rates.enums.CashType
 import com.sfl.rates.models.ExchangePointModel
 import com.sfl.rates.services.RatePreference
-import com.sfl.rates.utils.Utils
-import com.sfl.rates.utils.getStringFromResources
-import com.sfl.rates.utils.initRecyclerView
+import com.sfl.rates.utils.*
 import com.sfl.rates.viewModels.ExchangeRateViewModel
+import kotlinx.android.synthetic.main.connection_layout.*
 import kotlinx.android.synthetic.main.currency_dialog_layout.view.*
 import kotlinx.android.synthetic.main.fragment_exchange_rates.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
@@ -211,4 +210,18 @@ class ExchangeRateFragment : BaseFragment() {
         }
     }
 
+    override fun onNetworkChanged(state: Boolean) {
+        if (state) {
+            viewStubRootLayout?.hide()
+            currencyRootLinearLayout.show()
+            bankSellButRootLinearLayout.show()
+            exchangeRecyclerView.show()
+            getExchangeRateData()
+        } else {
+            noConnectionViewStub?.inflate()
+            currencyRootLinearLayout.hide()
+            exchangeRecyclerView.hide()
+            bankSellButRootLinearLayout.hide()
+        }
+    }
 }

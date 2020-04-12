@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Rate</string>
-
+    <!--    <string name="google_map_api_key" translatable="false">AIzaSyDliDU79p1FmHPRVPqHf_8S-ExUlQJoQ6Q</string>-->
     <string name="exchange_rates">Exchange rates</string>
     <string name="bank_details">Bank details</string>
     <string name="bank_name">Bank name</string>
@@ -26,4 +26,5 @@
     <string name="contact_number">Contact number</string>
     <string name="working_days">Working days</string>
     <string name="view_on_map">View on map</string>
+    <string name="no_internet_connection">No Internet Connection</string>
 </resources>

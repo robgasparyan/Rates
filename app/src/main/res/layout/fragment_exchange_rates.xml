@@ -11,6 +11,7 @@
         android:layout_height="wrap_content"
         android:background="@color/colorLightGray"
         android:minHeight="@dimen/_38sdp"
+        android:id="@+id/currencyRootLinearLayout"
         android:weightSum="4">
 
         <FrameLayout
@@ -73,6 +74,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorGray"
+        android:id="@+id/bankSellButRootLinearLayout"
         android:minHeight="@dimen/_40sdp">
 
         <androidx.appcompat.widget.AppCompatTextView
@@ -115,5 +117,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/_12sdp"
         android:layout_marginEnd="@dimen/_12sdp" />
+
+    <ViewStub
+        android:id="@+id/noConnectionViewStub"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout="@layout/connection_layout" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>

@@ -31,5 +31,22 @@
             android:defaultValue="@null"
             app:argType="com.sfl.rates.models.ExchangePointModel"
             app:nullable="true" />
+        <action
+            android:id="@+id/bankDeatilsToBankLocation"
+            app:destination="@id/bankLocationFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:popUpTo="@id/bankDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bankLocationFragment"
+        android:name="com.sfl.rates.fragments.BankLocationFragment"
+        android:label="BankLocationFragment">
+        <argument
+            android:name="latlng"
+            app:argType="string"
+            app:nullable="true" />
     </fragment>
 </navigation>

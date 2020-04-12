@@ -3,6 +3,7 @@ package com.sfl.rates.fragments
 import android.os.Bundle
 import android.view.View
 import androidx.lifecycle.Observer
+import androidx.navigation.Navigation
 import com.sfl.rates.BaseFragment
 import com.sfl.rates.R
 import com.sfl.rates.adapters.BankBranchesAdapter
@@ -97,9 +98,17 @@ class BankDetailFragment : BaseFragment() {
             }
         }
         viewOnMapTextView?.setOnClickListener {
-            Utils.openMap(context, branch.location?.lat, branch.location?.lng)
+//            Utils.openMap(context, branch.location?.lat, branch.location?.lng)
+            view?.apply {
+                val bundle = Bundle()
+                bundle.putString("latlng", "${branch.location?.lat},${branch.location?.lng}")
+                Navigation.findNavController(this).navigate(R.id.bankDeatilsToBankLocation, bundle)
+            }
         }
 
     }
 
+    override fun onNetworkChanged(state: Boolean) {
+
+    }
 }
