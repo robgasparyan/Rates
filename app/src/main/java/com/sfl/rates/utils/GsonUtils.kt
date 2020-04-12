@@ -3,23 +3,32 @@ package com.sfl.rates.utils
 import com.google.gson.Gson
 import com.sfl.rates.enums.CashType
 import com.sfl.rates.enums.CurrencyEnum
+import org.koin.core.KoinComponent
+import org.koin.core.inject
 
-object GsonUtils {
+
+object GsonUtils : KoinComponent {
+
+    val gson: Gson by inject()
 
     fun currencyEnumToJson(currencyEnum: CurrencyEnum): String {
-        return Gson().toJson(currencyEnum)
+
+        return gson.toJson(currencyEnum)
     }
 
     fun getCurrencyEnumFromJson(json: String?): CurrencyEnum {
-        return Gson().fromJson(json, CurrencyEnum::class.java)
+
+        return gson.fromJson(json, CurrencyEnum::class.java)
     }
 
     fun cashEnumToJson(cashType: CashType): String {
-        return Gson().toJson(cashType)
+
+        return gson.toJson(cashType)
     }
 
     fun getCashEnumFromJson(json: String?): CashType {
-        return Gson().fromJson(json, CashType::class.java)
+
+        return gson.fromJson(json, CashType::class.java)
     }
 
 }
