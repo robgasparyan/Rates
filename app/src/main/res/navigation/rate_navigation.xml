@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/exchangeRateFragment"
-        android:name="com.example.rate.fragments.ExchangeRateFragment"
+        android:name="com.sfl.rates.fragments.ExchangeRateFragment"
         android:label="ExchangeRateFragment">
         <action
             android:id="@+id/exchangeToBankDetail"
@@ -20,7 +20,7 @@
     </fragment>
     <fragment
         android:id="@+id/bankDetailFragment"
-        android:name="com.example.rate.fragments.BankDetailFragment"
+        android:name="com.sfl.rates.fragments.BankDetailFragment"
         android:label="BankDetailFragment">
         <argument
             android:name="destination_id"
@@ -29,7 +29,7 @@
         <argument
             android:name="bank_detail"
             android:defaultValue="@null"
-            app:argType="com.example.rate.models.ExchangePointModel"
+            app:argType="com.sfl.rates.models.ExchangePointModel"
             app:nullable="true" />
     </fragment>
 </navigation>
