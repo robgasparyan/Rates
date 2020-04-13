@@ -158,4 +158,15 @@ object Utils {
         return list
     }
 
+    fun restartApp(context: Context?) {
+        context?.apply {
+            val packageManager = this.packageManager
+            val intent = packageManager.getLaunchIntentForPackage(this.packageName)
+            val componentName = intent?.component
+            val mainIntent = Intent.makeRestartActivityTask(componentName)
+            this.startActivity(mainIntent)
+            Runtime.getRuntime().exit(0)
+        }
+
+    }
 }

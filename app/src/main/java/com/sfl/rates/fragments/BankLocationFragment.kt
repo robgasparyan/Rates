@@ -6,9 +6,12 @@ import androidx.navigation.Navigation
 import com.google.android.gms.maps.CameraUpdateFactory
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.model.LatLng
+import com.google.android.gms.maps.model.MapStyleOptions
 import com.google.android.gms.maps.model.MarkerOptions
 import com.sfl.rates.BaseFragment
 import com.sfl.rates.R
+import com.sfl.rates.enums.InterfaceType
+import com.sfl.rates.services.RatePreference
 import kotlinx.android.synthetic.main.bank_location_layout.*
 
 
@@ -18,6 +21,7 @@ class BankLocationFragment : BaseFragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         mapView?.onCreate(savedInstanceState)
+
         val latLng = arguments?.getString("latlng", "")?.split(",")
         if (latLng == null || latLng.isEmpty()) {
 
@@ -41,6 +45,14 @@ class BankLocationFragment : BaseFragment() {
                             latLng[0].toDouble(),
                             latLng[1].toDouble()
                         )
+                    )
+                )
+            }
+
+            if (RatePreference.InterfaceType.getAsObject() == InterfaceType.DARK) {
+                it?.setMapStyle(
+                    MapStyleOptions.loadRawResourceStyle(
+                        context, R.raw.google_map_style_json
                     )
                 )
             }

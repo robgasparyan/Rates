@@ -51,6 +51,26 @@ sealed class RatePreference<T>(val key: String, val defaultValue: T) : KoinCompo
         }
     }
 
+    object InterfaceType :
+        RatePreference<String>("interface_type", "") {
+
+        fun getAsObject(): com.sfl.rates.enums.InterfaceType {
+            return GsonUtils.getInterfaceEnumFromJson(preference.get(this))
+        }
+
+        override fun get(): String {
+            return preference.get(this)
+        }
+
+        override fun set(json: String) {
+            preference.put(this, json)
+        }
+
+        fun set(value: com.sfl.rates.enums.InterfaceType) {
+            preference.put(this, GsonUtils.interfaceEnumToJson(value))
+        }
+    }
+
     abstract fun get(): T
     abstract fun set(value: T)
 

@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="?attr/colorLightGray"
     android:layout_height="@dimen/_40sdp">
 
     <androidx.appcompat.widget.AppCompatImageView
@@ -10,6 +11,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:padding="@dimen/_6sdp"
+        android:layout_marginStart="@dimen/_10sdp"
         app:srcCompat="@mipmap/ic_usd" />
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -20,7 +22,7 @@
         android:layout_marginEnd="@dimen/_8sdp"
         android:layout_weight="2"
         android:gravity="start|center_vertical"
-        android:textColor="@color/textColor"
+        android:textColor="?attr/textColorGray"
         android:textSize="@dimen/_12sdp"
         tools:text="USD" />
 
@@ -30,7 +32,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="0.2"
         android:gravity="start"
-        android:textColor="@color/textColor"
+        android:textColor="?attr/textColorGray"
         android:textSize="@dimen/_11sdp"
         tools:text="477" />
 
@@ -40,7 +42,7 @@
         android:layout_height="wrap_content"
         android:layout_weight="0.2"
         android:gravity="start"
-        android:textColor="@color/textColor"
+        android:textColor="?attr/textColorGray"
         android:textSize="@dimen/_11sdp"
         tools:text="480.5" />
 

@@ -4,7 +4,7 @@
     android:id="@+id/currencyDialogItemRootLinearLayout"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/colorWhite"
+    android:background="?attr/colorLightGray"
     android:gravity="center_vertical"
     android:paddingStart="@dimen/_8sdp"
     android:paddingTop="@dimen/_4sdp"
@@ -30,7 +30,7 @@
             android:id="@+id/currencyTitleTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/textColor"
+            android:textColor="?attr/textColorGray"
             android:textSize="@dimen/_12sdp"
             tools:text="EUR" />
 
@@ -38,6 +38,7 @@
             android:id="@+id/currencyDescriptionTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="?attr/textColorGray"
             android:textSize="@dimen/_10sdp"
             tools:text="Euro" />
     </androidx.appcompat.widget.LinearLayoutCompat>

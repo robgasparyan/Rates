@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="light_gray_dark_transparent" format="color" />
+    <attr name="colorWhite" format="color" />
+    <attr name="blackTransparentDark" format="color" />
+    <attr name="colorLightGray" format="color" />
+    <attr name="colorGray" format="color" />
+    <attr name="textColorGray" format="color" />
+    <attr name="colorPrimary" format="color" />
+
+</resources>

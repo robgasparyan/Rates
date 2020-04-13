@@ -1,7 +1,7 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
@@ -9,6 +9,29 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+
+
+    <style name="LightTheme" parent="AppTheme">
+        <item name="light_gray_dark_transparent">@color/textColorGray</item>
+        <item name="colorWhite">@color/colorWhite</item>
+        <item name="blackTransparentDark">@color/blackTransparent</item>
+        <item name="colorLightGray">@color/colorLightGray</item>
+        <item name="colorGray">@color/colorGray</item>
+        <item name="textColorGray">@color/textColorGray</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+
+    </style>
+
+    <style name="DarkTheme" parent="AppTheme">
+        <item name="light_gray_dark_transparent">@color/textColorGrayDark</item>
+        <item name="colorWhite">@color/colorWhiteDark</item>
+        <item name="blackTransparentDark">@color/blackTransparentDark</item>
+        <item name="colorLightGray">@color/colorLightGrayDark</item>
+        <item name="colorGray">@color/colorGrayDark</item>
+        <item name="textColorGray">@color/textColorGrayDark</item>
+        <item name="colorPrimary">@color/colorPrimaryForDark</item>
+    </style>
+
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 </resources>

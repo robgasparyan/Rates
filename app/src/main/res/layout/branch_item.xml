@@ -5,9 +5,8 @@
     android:id="@+id/branchItemRootLinearLayout"
     android:layout_width="match_parent"
     android:layout_height="@dimen/_40sdp"
-    android:layout_marginStart="@dimen/_12sdp"
-    android:layout_marginEnd="@dimen/_12sdp"
     android:gravity="center_vertical"
+    android:background="?attr/colorLightGray"
     android:paddingTop="@dimen/_4sdp"
     android:paddingBottom="@dimen/_4sdp">
 
@@ -16,12 +15,13 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_alignParentStart="true"
+        android:layout_marginStart="@dimen/_20sdp"
         android:layout_toStartOf="@+id/sell_tv"
         android:layout_weight="2"
         android:ellipsize="end"
         android:gravity="center_vertical|start"
         android:lines="1"
-        android:textColor="@color/textColor"
+        android:textColor="?attr/textColorGray"
         android:textSize="@dimen/_12sdp"
         tools:text="EUR" />
 
@@ -30,12 +30,11 @@
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
         android:layout_centerVertical="true"
+        android:layout_marginEnd="@dimen/_12sdp"
         android:gravity="center_vertical"
         android:src="@drawable/ic_right_arrow"
-        android:textColor="@color/textColor"
         android:textSize="@dimen/_11sdp"
-        android:tint="@android:color/black"
-        app:drawableTint="@color/textColor"
+        app:drawableTint="?attr/textColorGray"
         tools:text="480.5" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>

@@ -114,7 +114,9 @@ class ExchangeRateFragment : BaseFragment() {
                 )
             }
         }
-
+        settingFAB?.setOnClickListener {
+            Navigation.findNavController(it).navigate(R.id.exchangeRateToSettings)
+        }
     }
 
     private fun getExchangeRateData() {

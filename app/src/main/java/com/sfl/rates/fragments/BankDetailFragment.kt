@@ -13,6 +13,7 @@ import com.sfl.rates.models.ExchangePointModel
 import com.sfl.rates.utils.Utils
 import com.sfl.rates.utils.hide
 import com.sfl.rates.utils.initRecyclerView
+import com.sfl.rates.utils.show
 import com.sfl.rates.viewModels.ExchangeRateViewModel
 import kotlinx.android.synthetic.main.fragment_bank_details.*
 import org.koin.androidx.viewmodel.ext.android.viewModel
@@ -52,6 +53,7 @@ class BankDetailFragment : BaseFragment() {
             })
         bankBranchAdapter.onBranchClick = {
             bankDetails(it)
+            workdayHourInfoRelativeLayout.show()
             appBarLayout.setExpanded(true)
         }
 

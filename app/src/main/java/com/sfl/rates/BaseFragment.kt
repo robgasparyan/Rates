@@ -14,7 +14,9 @@ abstract class BaseFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+        // Network Listener
         NetworkUtils.registerNetworkCallback(context)
+        // App launch time network checker
         NetworkUtils.networkCallback = {
             onNetworkChanged(it)
         }

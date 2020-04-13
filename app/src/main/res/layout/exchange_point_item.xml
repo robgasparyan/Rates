@@ -5,12 +5,14 @@
     android:id="@+id/exchangeItemRootLinearLayout"
     android:layout_width="match_parent"
     android:layout_height="@dimen/_42sdp"
+    android:background="?attr/colorLightGray"
     android:gravity="center">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/exchangeBankImageView"
         android:layout_width="@dimen/_22sdp"
         android:layout_height="@dimen/_22sdp"
+        android:layout_marginStart="@dimen/_12sdp"
         app:srcCompat="@drawable/ic_bank" />
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -20,7 +22,7 @@
         android:layout_marginStart="@dimen/_12sdp"
         android:layout_weight="1.5"
         android:ellipsize="end"
-        android:textColor="@color/textColor"
+        android:textColor="?attr/textColorGray"
         android:textSize="@dimen/_11sdp"
         tools:text="InecoBank" />
 
@@ -28,7 +30,7 @@
         android:id="@+id/exchangeBankBuyPriceTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textColor="@color/textColor"
+        android:textColor="?attr/textColorGray"
         android:textSize="@dimen/_11sdp"
         tools:text="477" />
 
@@ -36,10 +38,11 @@
         android:id="@+id/exchangeBankSellPriceTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_12sdp"
         android:gravity="end"
         android:paddingStart="@dimen/_12sdp"
         android:paddingEnd="@dimen/_12sdp"
-        android:textColor="@color/textColor"
+        android:textColor="?attr/textColorGray"
         android:textSize="@dimen/_11sdp"
         tools:text="480.5" />
 
