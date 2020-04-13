@@ -16,12 +16,9 @@ This is a sample application that shows all exchange rates from banks of Armenia
 :-------------------------:|:-------------------------:|:-------------------------:
 ![](https://github.com/robgasparyan/Rates/blob/master/screenshots/screenshot1.png?raw=true)  |  ![](https://github.com/robgasparyan/Rates/blob/master/screenshots/screenshot2.png?raw=true)  |  ![](https://github.com/robgasparyan/Rates/blob/master/screenshots/screenshot3.png?raw=true)
 
- ⠀           |   ⠀      |  ⠀
+ ⠀             |  ⠀       | ⠀
 :-------------------------:|:-------------------------:|:-------------------------:
-![](https://github.com/robgasparyan/Rates/blob/master/screenshots/screenshot4.png?raw=true)  |  ![](https://github.com/robgasparyan/Rates/blob/master/screenshots/screenshot5.png?raw=true)   |  ![]
-(https://github.com/robgasparyan/Rates/blob/master/screenshots/screenshot6.png?raw=true)
- 
-
+![](https://github.com/robgasparyan/Rates/blob/master/screenshots/screenshot4.png?raw=true)  |  ![](https://github.com/robgasparyan/Rates/blob/master/screenshots/screenshot6.png?raw=true) 
 
 # Recourses
 
